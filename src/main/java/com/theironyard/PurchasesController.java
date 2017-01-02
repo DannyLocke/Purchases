@@ -27,11 +27,10 @@ public class PurchasesController {
         List<Purchase> purchaseList;
         if (category != null) {
             purchaseList = purchases.findByCategory(category);
-        } else
-        {
+        }
+        else {
             purchaseList = (List<Purchase>) purchases.findAll();
         }
-
         model.addAttribute("purchases", purchaseList);
         return "home";
     }
