@@ -10,6 +10,17 @@
 </head>
 <body>
 
+<style>
+    Body{
+    background-color: lightblue;
+    font-family: "Georgia";
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    }
+</style>
+
 <br/><br/>
 
 <a href = "/">All</a>
@@ -20,6 +31,24 @@
 <a href = "/?category=Jewelry">Jewelry</a>
 
 <br/><br/>
+
+<table class="table table-stripped">
+
+    <tr> <th align="left">Name</th> <th align="left">Email</th> <th align="left">Category</th>
+        <th align="left">Creditcard</th> <th align="left">CVV</th> <th align="left">Date</th></tr>
+
+    {{#purchases}}
+    <tr>
+        <td>{{customer.name}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{category}} </td>
+        <td>{{creditCard}} </td>
+        <td>{{cvv}}</td>
+        <td>{{date}}</td>
+    </tr>
+    {{/purchases}}
+
+</table>
 
 </body>
 </html>

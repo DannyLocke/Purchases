@@ -42,6 +42,14 @@ public class Purchase {
         
     }
 
+    public Purchase(String date, String creditCard, String cvv, String category, Customer customer) {
+        this.date = date;
+        this.creditCard = creditCard;
+        this.cvv = cvv;
+        this.category = category;
+        this.customer = customer;
+    }
+
     public int getId() {
         return id;
     }
