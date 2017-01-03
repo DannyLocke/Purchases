@@ -61,29 +61,4 @@ public class PurchasesController {
 
     }//end init()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }//end class PurchasesController

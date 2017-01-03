@@ -97,4 +97,5 @@ public class Purchase {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-}
+
+}//end class Purchase
